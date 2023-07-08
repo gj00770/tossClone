@@ -9,7 +9,7 @@ export type StepType =
   | "getMoney"
   | "getMoneyWithFriend"
   | "getLimit";
-export const TossBank: FunctionComponent = () => {
+export const FindPurchase: FunctionComponent = () => {
   const [currentStep, setCurrentStep] = useState<StepType>("selectSection");
   const [unmounting, setUnmounting] = useState(false);
 

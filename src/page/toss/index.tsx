@@ -1,6 +1,6 @@
 import { FunctionComponent, useState } from "react";
 import { cssObj } from "./style";
-import { TossBank } from "./component";
+import { FindPurchase, TossBank } from "./component";
 
 export const Toss: FunctionComponent = () => {
   const [currentTab, setCurrentTab] = useState<"tossBank" | "findPurchase">(
@@ -10,6 +10,7 @@ export const Toss: FunctionComponent = () => {
     if (currentTab === "tossBank") {
       return <TossBank />;
     } else if (currentTab === "findPurchase") {
+      return <FindPurchase />;
     }
   };
   return (

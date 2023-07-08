@@ -43,6 +43,21 @@ export const SelectSection: FunctionComponent<SelectSectionProps> = (props) => (
         </div>
       </button>
     </div>
+
+    <p css={cssObj.itemHeader}>대출</p>
+    <div css={cssObj.itemContainer}>
+      <button
+        type="button"
+        css={cssObj.itemWrapper}
+        onClick={() => props.changeStep("getLimit")}
+      >
+        <div css={cssObj.itemPicture} />
+        <div css={cssObj.itemBody}>
+          <p css={cssObj.itemSubTitle}>얼마나 빌릴 수 있을까?</p>
+          <p css={cssObj.itemTitle}>한도 알아보기</p>
+        </div>
+      </button>
+    </div>
     <p css={cssObj.itemHeader}>대출</p>
     <div css={cssObj.itemContainer}>
       <button
